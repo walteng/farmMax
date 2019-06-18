@@ -18,7 +18,7 @@ The application also requires the linking of a jquery file which is a javascript
 ## Known Bugs**
 {This application has no known bugs. }
 ## Technologies Used
-{The application uses a number of technologies which include; HTML,CSS and javascript.}
+{The application uses a number of technologies which include; HTML,CSS,javascriptand jquery.}
 ## Support and contact details
 {For any questions, comments ideas, users can reach out to the developer via the following e-mail address: pwanwa100@gmail.com.}
 ### License
