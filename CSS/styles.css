@@ -5,3 +5,6 @@ div{
 .navBar :hover li{
   text-decoration: none;
 }
+.form-control{
+  width: 100px;
+}
