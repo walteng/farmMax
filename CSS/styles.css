@@ -2,6 +2,19 @@ div{
   padding: 10px;
   border-radius: 15px; 
 }
-.navBar :hover li{
+.navBar{
+  background-color: black;
+  border-radius: 14px;
+}
+ 
+ul li{
+  padding: 15px;
+}
+.navBar li :hover{
+  color: azure;
   text-decoration: none;
+  padding: 10px;
+  background-color: green;
+  border-radius: 14px;
+
 }
