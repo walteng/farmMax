@@ -1,28 +1,32 @@
-div{
+div {
   padding: 6px;
   border-radius: 15px;
 }
-.navBar{
+
+.navBar {
   background-color: black;
   border-radius: 14px;
 }
- 
-ul li{
+
+ul li {
   padding: 20px;
 }
-.navBar li :hover{
+
+.navBar li :hover {
+  padding: inherit;
   color: azure;
   text-decoration: none;
-  padding: 10px;
   background-color: green;
   border-radius: 14px;
-
+  overflow: auto;
 }
+
 .check {
   text-align: left;
   line-height: 40px;
   letter-spacing: 0.1em;
 }
+
 #box1 {
   line-height: 30px
 }
