@@ -1,7 +1,15 @@
 div{
   padding: 10px;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 .navBar :hover li{
   text-decoration: none;
+}
+.check {
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+#box1 {
+  line-height: 30px
 }
