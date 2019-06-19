@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # {FarmMax}
 #### {This Application is designed to ...}, {18th-06-2019}
 #### By {Walter kiprotich}
@@ -48,4 +47,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ##Behaviour Driven Development
-/*..............*/
