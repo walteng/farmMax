@@ -36,13 +36,14 @@
         <div class="row bg-danger" styles="margin-bottom: 5%;" >
           <div class="col-12" style="text-align: center; padding-left: 40%;">
             <div class="row"><h1 style="text-align:center" >Products</h1></div>
-
           </div>
-
-<br><br>
+          <br><br>
           <div class= "col-4">
             <label for="place">Place</label>
             <select name="Place" class="form-control" id="place">
+              <option value="yes">
+                Select location
+              </option>
               <option value="NAROK">Narok.</option>
               <option value="NAROK">Nakuru</option>
               <option value="UASIN GISHU">Uasin Gishu</option>
@@ -52,6 +53,9 @@
           <div class="col-4">
             <label for="crop">Crop</label>
             <select name="crop" class="form-control" id="crop">
+              <option value="yes">
+                Select Crop
+              </option>
               <option value="MAIZE">Maize</option>
               <option value="BEANS">Beans</option>
               <option value="CABBAGES">Cabbages</option>
@@ -63,10 +67,15 @@
             <label for="season">Season</label>
             <select name="season" class="form-control" id="season">
               <option value="yes">
-                Yes
+                Select season
+              </option>
+              <option value="yes">
+                Jan-April
               </option>
               <option value="no">
-                No
+                May-Aug</option>
+                <option value="no">
+                  Sep-Dec</option>
             </select>
           </div>
         </div>
