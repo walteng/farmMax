@@ -2,166 +2,168 @@
  <html lang="en" dir="ltr">
 
  <head>
-      <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="CSS/styles.css">
-     <link rel="stylesheet" href="CSS/bootstrap.css">
-     <link rel="stylesheet" href="JS/bootstrap.min.js">
-     <link rel="stylesheet" href="JS/jquery-3.4.1.js">
-     <link rel="shortcut-icon" href="Images/icon.jpeg">
-     <script src="JS/scripts.js"></script>
-     <title>farmMax</title>
-   </head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="CSS/styles.css">
+   <link rel="stylesheet" href="CSS/bootstrap.css">
+   <link rel="stylesheet" href="JS/bootstrap.min.js">
+   <link rel="stylesheet" href="JS/jquery-3.4.1.js">
+   <link rel="shortcut-icon" href="Images/icon.jpeg">
+   <script src="JS/scripts.js"></script>
+   <title>farmMax</title>
+ </head>
 
-   <body>
-     <div class="container">
-       <div class="navBar">
-         <ul class="nav nav-tabs">
-           <li role="presentation" class="active"><a href="#">Home</a></li>
-           <li role="presentation"><a href="#">Profile</a></li>
-           <li role="presentation"><a href="#">Messages</a></li>
-         </ul>
-       </div>
-       <div class="row">
-         <div class="col-sm-9">
-           <div class="row bg-primary">
-             <h1>News</h1>
-           </div>
-           <br>
-           <div class="row bg-success" style="margin-bottom: 5%; padding-left: 0%; padding-right: 0px;
+ <body>
+   <div class="container">
+     <div class="navBar">
+       <ul class="nav nav-tabs">
+         <li role="presentation" class="active"><a href="#">Home</a></li>
+         <li role="presentation"><a href="#">Profile</a></li>
+         <li role="presentation"><a href="#">Messages</a></li>
+       </ul>
+     </div>
+     <div class="row">
+       <div class="col-sm-9">
+         <div class="row bg-primary">
+           <h1>News</h1>
+         </div>
+         <br>
+         <div class="row bg-success" style="margin-bottom: 5%; padding-left: 0%; padding-right: 0px;
         margin-right: 0px;">
-          <div class="col-12" style="text-align:center; padding-left: 40%; height: 10%;">
-            <div class="row">
-              <h1 style="text-align:center">Inputs</h1>
-            </div>
-          </div>
-          <img src="Images/6bfebd1c3ab25d1cf8939c071f7a71e9_XL.jpg" class="img-fluid " height="116" alt="">
-          <br><br>
-          <div class="col-4">
-            <label for="sizes">sizes</label>
-            <select name="inputs" id="size">
-              <option value="select sizes">Select farm sizes</option>
-              <option value="1 hectare">1 ha</option>
-              <option value="2 hectare">2 ha</option>
-              <option value="3 hectare">3 ha</option>
-              <option value="4 hectare">4 ha</option>
-              <option value="5 hectare">5 ha</option>
-              <option value="6 hectare">6 ha</option>
-            </select>
-          </div>
-          <div class="col-4">
-            <label for="Seeds">Seeds</label>
-            <select name="inputs" id="seeds">
-              <option value="Select Seeds">Select Seeds</option>
-              <option value="Maize">maize</option>
-              <option value="Beans">Beans</option>
-              <option value="Cabbages">Cabbages</option>
-              <option value="Potatoes">Potatoes</option>
-              <option value="Wheat">Wheat</option>
-            </select>
-          </div>
-          <div class="col-4">
-            <label for="Fertilizers">Fertilizers</label>
-            <select name="" id="Fertilizers">
-              <option value="Select fertilizer">Select fertilizer</option>
-              <option value="nitrogenous">Nitrogenous</option>
-              <option value="DAP">D.A.P</option>
-              <option value="organic">Organic</option>
-              <option value="phosphate">phosphate</option>
-              <option value="potassium">potassium</option>
-              <option value="Compound">Compound</option>
-            </select>
-          </div>
-        </div>
-
-        <br>
-        <div class="row bg-danger" styles="margin-bottom: 5%;" >
-          <div class="col-12" style="text-align: center; padding-left: 40%;">
-            <div class="row"><h1 style="text-align:center" >Products</h1></div>
-          </div>
-          <br><br>
-          <div class= "col-4">
-            <label for="place">Place</label>
-            <select name="Place" class="form-control" id="place">
-              <option value="yes">
-                Select location
-              </option>
-              <option value="NAROK">Narok</option>
-              <option value="NAROK">Nakuru</option>
-              <option value="UASIN GISHU">Uasin Gishu</option>
-              <option value="NYERI">Nyeri</option>
-            </select>
-          </div>
-          <div class="col-4">
-            <label for="crop">Crop</label>
-            <select name="crop" class="form-control" id="crop">
-              <option value="yes">
-                Select Crop
-              </option>
-              <option value="MAIZE">Maize</option>
-              <option value="BEANS">Beans</option>
-              <option value="CABBAGES">Cabbages</option>
-              <option value="POTATOES">Potatoes</option>
-              <option value="WHEAT">Wheat</option>
-            </select>
-          </div>
-          <div class="col-4">
-            <label for="season">Season</label>
-            <select name="season" class="form-control" id="season">
-              <option value="yes">
-                Select season
-              </option>
-              <option value="yes">
-                Jan-April
-              </option>
-              <option value="no">
-                May-Aug</option>
-                <option value="no">
-                  Sep-Dec</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-         <div class="col-sm-3">
-           <div class="check">
-             <h3>Suppliers</h3>
-             <p id="box1">Check box to get supplier contacts</p>
-             <form action="checkbox">
-               <input type="checkbox" name="suppliers" value="FarmLink"> FarmLink<br>
-               <input type="checkbox" name="suppliers" value="Shambaza"> Shambaza<br>
-               <input type="checkbox" name="suppliers" value="KFA"> KFA<br>
-               <input type="checkbox" name="suppliers" value="NAFIS"> NAFIS<br>
-             </form>
+           <div class="col-12" style="text-align:center; padding-left: 40%; height: 10%;">
+             <div class="row">
+               <h1 style="text-align:center">Inputs</h1>
+             </div>
            </div>
-           <br>
-           <h3>Partners</h3>
-           <p>Choose from our list of partners;</p>
-           <div class="check">
-             <form action="checkbox">
-               <input type="checkbox" name="partners" value="Ukwala"> Ukwala<br>
-               <input type="checkbox" name="partners" value="M-Farm"> M-farm<br>
-               <input type="checkbox" name="partners" value="Tusker mattress"> Tusker mattress<br>
-               <input type="checkbox" name="partners" value="Kongowea"> Kongowea<br>
-             </form>
+           <img src="Images/6bfebd1c3ab25d1cf8939c071f7a71e9_XL.jpg" class="img-fluid " height="116" alt="">
+           <br><br>
+           <div class="col-4">
+             <label for="sizes">sizes</label>
+             <select name="inputs"class="form-control" id="size">
+               <option value="select sizes">Select farm sizes</option>
+               <option value="1 hectare">1 ha</option>
+               <option value="2 hectare">2 ha</option>
+               <option value="3 hectare">3 ha</option>
+               <option value="4 hectare">4 ha</option>
+               <option value="5 hectare">5 ha</option>
+               <option value="6 hectare">6 ha</option>
+             </select>
            </div>
-           <br>
+           <div class="col-4">
+             <label for="Seeds">Seeds</label>
+             <select name="inputs" class="form-control" id="seeds">
+               <option value="Select Seeds">Select Seeds</option>
+               <option value="Maize">maize</option>
+               <option value="Beans">Beans</option>
+               <option value="Cabbages">Cabbages</option>
+               <option value="Potatoes">Potatoes</option>
+               <option value="Wheat">Wheat</option>
+             </select>
+           </div>
+           <div class="col-4">
+             <label for="Fertilizers">Fertilizers</label>
+             <select name=""class="form-control" id="Fertilizers">
+               <option value="Select fertilizer">Select fertilizer</option>
+               <option value="nitrogenous">Nitrogenous</option>
+               <option value="DAP">D.A.P</option>
+               <option value="organic">Organic</option>
+               <option value="phosphate">phosphate</option>
+               <option value="potassium">potassium</option>
+               <option value="Compound">Compound</option>
+             </select>
+           </div>
+         </div>
+
+         <br>
+         <div class="row bg-danger" styles="margin-bottom: 5%;">
+           <div class="col-12" style="text-align: center; padding-left: 40%;">
+             <div class="row">
+               <h1 style="text-align:center">Products</h1>
+             </div>
+           </div>
+           <br><br>
+           <div class="col-4">
+             <label for="place">Place</label>
+             <select name="Place" class="form-control" id="place">
+               <option value="yes">
+                 Select location
+               </option>
+               <option value="NAROK">Narok</option>
+               <option value="NAROK">Nakuru</option>
+               <option value="UASIN GISHU">Uasin Gishu</option>
+               <option value="NYERI">Nyeri</option>
+             </select>
+           </div>
+           <div class="col-4">
+             <label for="crop">Crop</label>
+             <select name="crop" class="form-control" id="crop">
+               <option value="yes">
+                 Select Crop
+               </option>
+               <option value="MAIZE">Maize</option>
+               <option value="BEANS">Beans</option>
+               <option value="CABBAGES">Cabbages</option>
+               <option value="POTATOES">Potatoes</option>
+               <option value="WHEAT">Wheat</option>
+             </select>
+           </div>
+           <div class="col-4">
+             <label for="season">Season</label>
+             <select name="season" class="form-control" id="season">
+               <option value="yes">
+                 Select season
+               </option>
+               <option value="yes">
+                 Jan-April
+               </option>
+               <option value="no">
+                 May-Aug</option>
+               <option value="no">
+                 Sep-Dec</option>
+             </select>
+           </div>
          </div>
        </div>
-       <br>
-       <div class="row">
-         <div class="col-4 bg-danger">
-           <h2>Location</h2>
+
+       <div class="col-sm-3">
+         <div class="check">
+           <h3>Suppliers</h3>
+           <p id="box1">Check box to get supplier contacts</p>
+           <form action="checkbox">
+             <input type="checkbox" name="suppliers" value="FarmLink"> FarmLink<br>
+             <input type="checkbox" name="suppliers" value="Shambaza"> Shambaza<br>
+             <input type="checkbox" name="suppliers" value="KFA"> KFA<br>
+             <input type="checkbox" name="suppliers" value="NAFIS"> NAFIS<br>
+           </form>
          </div>
-         <div class="col-4 bg-primary">
-           <h2>Terms & Conditions</h2>
+         <br>
+         <h3>Partners</h3>
+         <p>Choose from our list of partners;</p>
+         <div class="check">
+           <form action="checkbox">
+             <input type="checkbox" name="partners" value="Ukwala"> Ukwala<br>
+             <input type="checkbox" name="partners" value="M-Farm"> M-farm<br>
+             <input type="checkbox" name="partners" value="Tusker mattress"> Tusker mattress<br>
+             <input type="checkbox" name="partners" value="Kongowea"> Kongowea<br>
+           </form>
          </div>
-         <div class="col-4 bg-success">
-           <h2>Contacts</h2>
-         </div>
+         <br>
        </div>
      </div>
-   </body>
+     <br>
+     <div class="row">
+       <div class="col-4 bg-danger">
+         <h2>Location</h2>
+       </div>
+       <div class="col-4 bg-primary">
+         <h2>Terms & Conditions</h2>
+       </div>
+       <div class="col-4 bg-success">
+         <h2>Contacts</h2>
+       </div>
+     </div>
+   </div>
+ </body>
 
-   </html>
+ </html>
