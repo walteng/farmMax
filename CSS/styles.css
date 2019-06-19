@@ -1,15 +1,28 @@
+body  {
+  background-color: rgba(119, 201, 226, 0.712);
+}
 div {
   padding: 6px;
   border-radius: 15px;
 }
 
 .navBar {
+  width: 100%;
   background-color: black;
   border-radius: 14px;
+  position: sticky;
+}
+
+.navBar li{
+  padding-right: 100px;
+  overflow: hidden;
+
 }
 
 ul li {
   padding: 20px;
+  float: right;
+  
 }
 
 .navBar li :hover {
@@ -18,7 +31,7 @@ ul li {
   text-decoration: none;
   background-color: green;
   border-radius: 14px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .check {
@@ -29,4 +42,8 @@ ul li {
 
 #box1 {
   line-height: 30px
+}
+.card{
+  text-align: center;
+  height: 40px;
 }
