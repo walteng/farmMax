@@ -1,15 +1,49 @@
-div{
+body  {
+  background-color: rgba(119, 201, 226, 0.712);
+}
+div {
   padding: 6px;
   border-radius: 15px;
 }
-.navBar :hover li{
-  text-decoration: none;
+
+.navBar {
+  width: 100%;
+  background-color: black;
+  border-radius: 14px;
+  position: sticky;
 }
+
+.navBar li{
+  padding-right: 100px;
+  overflow: hidden;
+
+}
+
+ul li {
+  padding: 20px;
+  float: right;
+  
+}
+
+.navBar li :hover {
+  padding: inherit;
+  color: azure;
+  text-decoration: none;
+  background-color: green;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
 .check {
   text-align: left;
   line-height: 40px;
   letter-spacing: 0.1em;
 }
+
 #box1 {
   line-height: 30px
+}
+.card{
+  text-align: center;
+  height: 40px;
 }
