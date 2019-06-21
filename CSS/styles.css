@@ -14,15 +14,18 @@ div {
   position: sticky;
 }
 
-.navBar li {
+.navBar li{
   padding-right: 20px;
   padding-left: 20px;
-  overflow: auto;
+  overflow: hidden;
+
+
 }
 
 ul li {
   padding: 20px;
   float: right;
+
 }
 
 .navBar li :hover {
