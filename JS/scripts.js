@@ -1,4 +1,4 @@
-$('#myCarousel').carousel({
-  interval: 3000,
-  cycle: true
-}); 
+$(function() {
+  $( "#datepicker-13" ).datepicker();
+  $( "#datepicker-13" ).datepicker("show");
+});
