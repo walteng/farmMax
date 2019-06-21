@@ -14,15 +14,17 @@ div {
 }
 
 .navBar li{
-  padding-right: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
   overflow: hidden;
+
 
 }
 
 ul li {
   padding: 20px;
   float: right;
-  
+
 }
 
 .navBar li :hover {

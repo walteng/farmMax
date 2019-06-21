@@ -7,10 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/bootstrap.css">
-  <link rel="stylesheet" href="JS/bootstrap.min.js">
-  <link rel="stylesheet" href="JS/jquery-3.4.1.js">
+  <script type="text/javascript" src="JS/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link rel="shortcut-icon" href="Images/icon.jpeg">
-  <script src="JS/scripts.js"></script>
+
   <title>farmMax</title>
 </head>
 
@@ -39,23 +39,22 @@
               <h1 style="text-align:center">Inputs</h1>
             </div>
           </div>
-          <img src="Images/6bfebd1c3ab25d1cf8939c071f7a71e9_XL.jpg" class="img-fluid " height="116" alt="">
+          <!-- <img src="Images/6bfebd1c3ab25d1cf8939c071f7a71e9_XL.jpg" class="img-fluid " height="116" alt=""> -->
           <br><br>
           <div class="col-4">
             <label for="sizes">sizes</label>
             <select name="inputs" class="form-control" id="size">
               <option value="select sizes">Select farm sizes</option>
-              <option value="1 hectare">1 ha</option>
+              <option value="">1 ha</option>
               <option value="2 hectare">2 ha</option>
               <option value="3 hectare">3 ha</option>
               <option value="4 hectare">4 ha</option>
               <option value="5 hectare">5 ha</option>
-              <option value="6 hectare">6 ha</option>
             </select>
           </div>
           <div class="col-4">
             <label for="Seeds">Seeds</label>
-            <select name="inputs" class="form-control" id="seeds">
+            <select name="inputs" class="form-control" id="seed">
               <option value="Select Seeds">Select Seeds</option>
               <option value="Maize">maize</option>
               <option value="Beans">Beans</option>
@@ -66,15 +65,27 @@
           </div>
           <div class="col-4">
             <label for="Fertilizers">Fertilizers</label>
-            <select name="" class="form-control" id="Fertilizers">
+            <select name="" class="form-control" id="fertilizers">
               <option value="Select fertilizer">Select fertilizer</option>
               <option value="nitrogenous">Nitrogenous</option>
               <option value="DAP">D.A.P</option>
               <option value="organic">Organic</option>
               <option value="phosphate">phosphate</option>
-              <option value="potassium">potassium</option>
               <option value="Compound">Compound</option>
             </select>
+          </div>
+          <div class="row">
+            <input type="button" name="" value="Submit" id="inputs" onclick="myFarm">
+          </div>
+          <div class="col">
+            <output id="pr"></output>
+            <br>
+            <br>
+            <br>
+            <output id="par"></output>
+            <br>
+            <br>
+            <output id="paar"></output>
           </div>
         </div>
 
@@ -94,7 +105,7 @@
               </option>
               <option value="NAROK">Narok</option>
               <option value="NAROK">Nakuru</option>
-              <option value="UASIN GISHU">Uasin Gishu</option>
+              <option value="UASIN GISHU">UG</option>
               <option value="NYERI">Nyeri</option>
             </select>
           </div>
@@ -167,8 +178,7 @@
       </div>
       <div class="col-4 bg-primary">
         <h2>Terms & Conditions</h2>
-        <p>We encourage you go through our <a
-            href="https://www.termsfeed.com/terms-conditions/f54fd5bc1c4c5f76229882ccbe864ec7"> <em>Terms &
+        <p>We encourage you go through our <a href="https://www.termsfeed.com/terms-conditions/f54fd5bc1c4c5f76229882ccbe864ec7"> <em>Terms &
               Conditions</em></a> to understand how we can work together towards maximizing the farm yields </p>
 
       </div>
@@ -185,6 +195,160 @@
       <p><em>(c)farmMax @ 2019</em></p>
     </div>
   </div>
+  <script type="text/javascript">
+  // BI LOGIC
+
+   function myFarm (){
+     var selectedSize = $('select#size:selected').val();
+     var selectedSeed = $('select#seed:selected').val();
+     var selectedSeed = $('select#seed:selected').val();
+
+    if (selectSize[1] && selectSeed[1]) {
+      console.log(50);
+    } else if (selectSize==[2] && selectSeed==[1]) {
+      alert(100);
+    } else if (selectSize[3] && selectSeed[1]) {
+      alert(150);
+    } else if (selectSize[4] && selectSeed[1]) {
+      alert(200);
+    } else if (selectSize[5] && selectSeed[1]) {
+      alert(250);
+    }
+  };
+  // 	  if (this.customSize === selectSize[1] && this.customSeed === selectSeed[2]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customSeed === selectSeed[2]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customSeed === selectSeed[2]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customSeed === selectSeed[2]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customSeed === selectSeed[2]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	  if (this.customSize === selectSize[1] && this.customSeed === selectSeed[3]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customSeed === selectSeed[3]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customSeed === selectSeed[3]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customSeed === selectSeed[3]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customSeed === selectSeed[3]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	  if (this.customSize === selectSize[1] && this.customSeed === selectSeed[4]) {
+  //     this.farmInputs += 60;
+  //   } else if (this.customSize === selectSize[2] && this.customSeed === selectSeed[4]) {
+  //     this.farmInputs += 120;
+  //   } else if (this.customSize === selectSize[3] && this.customSeed === selectSeed[4]) {
+  //     this.farmInputs += 180;
+  //   } else if (this.customSize === selectSize[4] && this.customSeed === selectSeed[4]) {
+  //     this.farmInputs += 240;
+  //   } else if (this.customSize === selectSize[5] && this.customSeed === selectSeed[4]) {
+  //     this.farmInputs += 300;
+  //   }
+  // 	  if (this.customSize === selectSize[1] && this.customSeed === selectSeed[5]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customSeed === selectSeed[5]) {
+  //     this.farmInputs += 80;
+  //   } else if (this.customSize === selectSize[3] && this.customSeed === selectSeed[5]) {
+  //     this.farmInputs += 120;
+  //   } else if (this.customSize === selectSize[4] && this.customSeed === selectSeed[5]) {
+  //     this.farmInputs += 160;
+  //   } else if (this.customSize === selectSize[5] && this.customSeed === selectSeed[5]) {
+  //     this.farmInputs += 200;
+  //   }
+  //     if (this.customSize === selectSize[1] && this.customfertilizer === selectFertilizer[1]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customfertilizer=== selectFertilizer[1]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customfertilizer === selectFertilizer[1]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customfertilizer === selectFertilizer[1]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customfertilizer === selectFertilizer[1]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	if (this.customSize === selectSize[1] && this.customfertilizer === selectFertilizer[2]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customfertilizer=== selectFertilizer[2]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customfertilizer === selectFertilizer[2]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customfertilizer === selectFertilizer[2]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customfertilizer === selectFertilizer[2]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	if (this.customSize === selectSize[1] && this.customfertilizer === selectFertilizer[3]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customfertilizer=== selectFertilizer[3]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customfertilizer === selectFertilizer[3]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customfertilizer === selectFertilizer[3]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customfertilizer === selectFertilizer[3]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	if (this.customSize === selectSize[1] && this.customfertilizer === selectFertilizer[4]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customfertilizer=== selectFertilizer[4]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customfertilizer === selectFertilizer[4]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customfertilizer === selectFertilizer[4]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customfertilizer === selectFertilizer[4]) {
+  //     this.farmInputs += 250;
+  //   }
+  // 	if (this.customSize === selectSize[1] && this.customfertilizer === selectFertilizer[5]) {
+  //     this.farmInputs += 40;
+  //   } else if (this.customSize === selectSize[2] && this.customfertilizer=== selectFertilizer[5]) {
+  //     this.farmInputs += 70;
+  //   } else if (this.customSize === selectSize[3] && this.customfertilizer === selectFertilizer[5]) {
+  //     this.farmInputs += 100;
+  //   } else if (this.customSize === selectSize[4] && this.customfertilizer === selectFertilizer[5]) {
+  //     this.farmInputs += 150;
+  //   } else if (this.customSize === selectSize[5] && this.customfertilizer === selectFertilizer[5]) {
+  //     this.farmInputs += 250;
+  //   }
+  //   return this.farmInputs;
+  // }
+
+
+
+
+
+  // UI LOGIC
+
+
+  // $(document).ready(function() {
+  //   $("#inputs").click(function(event) {
+  //     event.preventDefault();
+  //     var custom1Size = $("select#size").val();
+  //     var customSeed = $("select#seed").val();
+  //     var customFertilizer = $("select#fertilizer").val();
+  //     /* var customLoc = $("select#location").val(); */
+  //     var newFarmer = new Inquiry (custom1Size, customSeed, customFertilizer);
+  //     /* var pizzaCost = parseInt(custom1Size) + parseInt(custom1Crust) + parseInt(custom1Topping) + parseInt(custom1Place); */
+  //     finalFarmInput.push(newFarmer.farmInputs);
+  //     $("#pr").text("Land :" + " " + custom1Size);
+  //     $("#par").text("Seeds :" + " " + customSeed);
+  //     $("#paar").text("Fertilizers :" + " " + customFertilizer);
+  //    /*  $("#parr").text("Delivery :" + " " + custom1Place); */
+  //     /* $("#paaar").text("Total :" + " " + pizzaCost);
+  //     $(".deli").click(function(event) {
+  //       alert("Your will be delivered to your place "+"at  "+pizzaCost+". Thank you for shopping with us.")
+  //     }); */
+  //   });
+
+  // });
+
+
+
+  </script>
 </body>
 
 </html>
