@@ -1,6 +1,7 @@
-body  {
-  background-color: rgba(119, 201, 226, 0.712);
+body .container-fluid{
+background-color: black;
 }
+
 div {
   padding: 6px;
   border-radius: 15px;
@@ -13,16 +14,15 @@ div {
   position: sticky;
 }
 
-.navBar li{
-  padding-right: 100px;
-  overflow: hidden;
-
+.navBar li {
+  padding-right: 20px;
+  padding-left: 20px;
+  overflow: auto;
 }
 
 ul li {
   padding: 20px;
   float: right;
-  
 }
 
 .navBar li :hover {
@@ -35,15 +35,47 @@ ul li {
 }
 
 .check {
+  color: antiquewhite;
   text-align: left;
   line-height: 40px;
   letter-spacing: 0.1em;
 }
 
 #box1 {
+  border-block-color: grey;
+  color: antiquewhite;
   line-height: 30px
 }
-.card{
+
+.card {
+  background-color: black;
   text-align: center;
   height: 40px;
+}
+.inputs {
+  color: black;
+  background-image: url("../Images/Fertilizer-organic-photo-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#products {
+  background-image: url("../Images/photo-1557234195-bd9f290f0e4d.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#visitUs{
+  color: rgba(128, 255, 0, 0.835);
+  border-top: white;
+  padding-top: 130px;
+} 
+#servicesWith{
+  color: ghostwhite;
+}
+option{
+  background-color: burlywood;
+}
+select{
+  border-radius: 10px;
+  background-color: burlywood;
 }
