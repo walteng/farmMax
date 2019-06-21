@@ -1,6 +1,7 @@
-body  {
-  background-color: rgba(119, 201, 226, 0.712);
+body .container-fluid{
+background-color: black;
 }
+
 div {
   padding: 6px;
   border-radius: 15px;
@@ -37,15 +38,20 @@ ul li {
 }
 
 .check {
+  color: antiquewhite;
   text-align: left;
   line-height: 40px;
   letter-spacing: 0.1em;
 }
 
 #box1 {
+  border-block-color: grey;
+  color: antiquewhite;
   line-height: 30px
 }
-.card{
+
+.card {
+  background-color: black;
   text-align: center;
   height: 40px;
 }
