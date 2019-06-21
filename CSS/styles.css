@@ -55,3 +55,31 @@ ul li {
   text-align: center;
   height: 40px;
 }
+.inputs {
+  color: black;
+  background-image: url("../Images/photo-1515150144380-bca9f1650ed9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#products {
+  background-image: url("../Images/photo-1557234195-bd9f290f0e4d.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#visitUs{
+  color: rgba(128, 255, 0, 0.835);
+  border-top: white;
+  padding-top: 130px;
+} 
+#servicesWith{
+  color: ghostwhite;
+}
+option{
+  background-color: burlywood;
+}
+select{
+  border-radius: 10px;
+  background-color: burlywood;
+}
+
